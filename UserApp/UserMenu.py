@@ -61,16 +61,16 @@ def go_to_booktypes(token):
 def go_to_entries(token, client_id):
     entries = get_all_entries(token)
     table = PrettyTable()
-    table.field_names = ["№", "Книга", "Дата начала", "Дата сдачи", "Дата конца"]
+    table.field_names = ['№', 'Книга', 'Дата начала', 'Дата сдачи', 'Дата конца']
     for i in range(len(entries)):
         data_beg = entries[i]['dataBeg'][:10]
         data_end = entries[i]['dataEnd'][:10]
         data_ret = entries[i]['dataRet']
         if data_ret is None:
-            data_ret = ""
-        if entries[i]["client"]['id'] == client_id:
+            data_ret = ''
+        if entries[i]['client']['id'] == client_id:
             table.add_row(
-                [i, entries[i]["book"]["name"], data_beg, data_ret, data_end])
+                [i, entries[i]['book']['name'], data_beg, data_ret, data_end])
     print(table)
 
 
@@ -82,4 +82,4 @@ def go_to_personal_data(token, client_id):
     print("Отчество: " + client['patherName'])
     print("Серия паспорта: " + client['passportSeria'])
     print("Номер паспорта: " + client['passportNum'])
-    print("\n")
+    print('\n')

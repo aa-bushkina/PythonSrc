@@ -5,9 +5,6 @@ from endpoints.Entry import *
 from endpoints.User import *
 
 
-# def clean_tables():
-
-
 def fill_tabels():
     username = "test_admin"
     password = "test_admin"
@@ -165,10 +162,10 @@ def fill_tabels():
                          pass_ser="2234", pass_num="452289")['id']
 
     entry1 = add_entry(token, client1, book1)
-    entry1 = add_entry(token, client2, book2)
-    entry1 = add_entry(token, client2, book3)
-    entry1 = add_entry(token, client2, book4)
-    entry1 = add_entry(token, client3, book5)
-    entry1 = add_entry(token, client3, book6)
-    entry1 = add_entry(token, client4, book7)
-    entry1 = add_entry(token, client5, book8)
+    entry2 = add_entry(token, client2, book2)
+    entry3 = add_entry(token, client2, book3)
+    entry4 = add_entry(token, client2, book4)
+    entry5 = add_entry(token, client3, book5)
+    entry6 = add_entry(token, client3, book6)
+    entry7 = add_entry(token, client4, book7)
+    entry8 = add_entry(token, client5, book8)

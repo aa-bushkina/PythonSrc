@@ -13,7 +13,7 @@ def print_header():
     for number in range(50):
         print(" ", end='')
     print("\n")
-    for number in range(108):
+    for number in range(110):
         print("_", end='')
     print("\n")
 

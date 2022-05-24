@@ -83,7 +83,7 @@ def show_all_entries_by_book(token):
             print("Некорректный символ! Выберите номер из указанных!\n")
     entries = get_all_entries(token)
     table = PrettyTable()
-    table.field_names = ["№", "Книга", "Клиент", "Дата начала", "Дата сдачи", "Дата конца"]
+    table.field_names = ['№', 'Книга', 'Клиент', 'Дата начала', 'Дата сдачи', 'Дата конца']
     num = 0
     for i in range(len(entries)):
         data_beg = entries[i]['dataBeg'][:10]
